@@ -10,7 +10,7 @@ const Statistics = () => {
     console.log(datas);
     return (
       <div>
-        <h1 className="text-5xl p-5 font-semibold">Statistics</h1>
+        <h1 className="text-5xl text-slate-500 p-5 font-semibold">Statistics</h1>
         <div className="flex justify-center m-14">
           <LineChart width={600} height={500} data={datas}>
             <Line type="monotone" dataKey="total" stroke="#8884d8"></Line>

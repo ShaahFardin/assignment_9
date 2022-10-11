@@ -15,11 +15,11 @@ const Topics = () => {
             alt=""
             className="w-full h-full bg-no-repeat bg-cover bg-fixed"
           />
-          <h1 className="text-start ml-20 text-5xl mt-10">
+          <h1 className="text-start text-slate-500 ml-20 text-5xl mt-20">
             Take the QuizMaster quiz test and test your knowledge
           </h1>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-10 mb-20 mx-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 my-20 mx-20 ">
           {topics.map((topic) => (
             <Topic key={topic.id} topic={topic}></Topic>
           ))}
