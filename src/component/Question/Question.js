@@ -1,4 +1,3 @@
-import React from "react";
 import Options from "../Options/Options";
 import { EyeIcon } from "@heroicons/react/24/solid";
 import { toast } from "react-toastify";
@@ -19,7 +18,7 @@ const Question = ({ questions }) => {
   };
 
   return (
-    <div className="border rounded-xl m-5 bg-sky-700 text-gray-100 mt-16  mx-60 shadow-xl text-start p-10 ">
+    <div className="border rounded-xl m-5 bg-sky-800 text-gray-100 mt-16 md:mx-60  shadow-xl text-start p-10 ">
       <div className="flex items-center justify-between">
         <p className="text-2xl my-5 font-semibold">{question}</p>
         <p onClick={showAnswer}>
@@ -28,7 +27,7 @@ const Question = ({ questions }) => {
       </div>
       <p>
         {options.map((option) => (
-          <Options selectedAnswer={selectedAnswer} option={option} ></Options>
+          <Options selectedAnswer={selectedAnswer} option={option}></Options>
         ))}
       </p>
     </div>

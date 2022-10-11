@@ -8,7 +8,7 @@ const Topics = () => {
   const topics = loadTopics.data;
   console.log(topics);
   return (
-    <div className=" bg-green-400 forest">
+    <div className="forest">
       <div>
         <div>
           <h1 className="text-start font-semibold text-slate-600 ml-20 text-5xl pt-20 ">

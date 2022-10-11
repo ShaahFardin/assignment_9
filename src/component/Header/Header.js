@@ -7,15 +7,15 @@ import {
 
 const Header = () => {
   return (
-    <div className="md:flex justify-between items-center px-20 p-5 bg-sky-900 text-white">
-      <div className=" text-2xl flex items-center ">
-        
-        <DocumentCheckIcon className="w-10 h-10 mr-2"></DocumentCheckIcon> QuizMaster
+    <div className="md:flex justify-between items-center  bg-sky-900 text-white">
+      <div className="text-2xl flex items-center p-5">
+        <DocumentCheckIcon className="w-10 h-10 mr-2"></DocumentCheckIcon>{" "}
+        QuizMaster
       </div>
-      <div className="menu ">
+      <div className="menu">
         <Link to="/topics">Topics</Link>
-        <Link to="/statistics">Statistics</Link>
         <Link to="/blog">Blog</Link>
+        <Link to="/statistics">Statistics</Link>
       </div>
     </div>
   );

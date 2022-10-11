@@ -8,6 +8,7 @@ import Main from "./component/Main/Main";
 import Statistics from "./component/Statistics/Statistics";
 import TopicDetails from "./component/TopicDetails/TopicDetails";
 import Topics from "./component/Topics/Topics";
+import Error from "./component/Error/Error";
 
 function App() {
   const router = createBrowserRouter([
@@ -44,6 +45,10 @@ function App() {
 
           element: <TopicDetails></TopicDetails>,
         },
+        {
+          path: '*',
+          element: <Error></Error>
+        }
       ],
     },
   ]);
