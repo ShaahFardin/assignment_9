@@ -1,7 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
 import Blog from "./component/Blog/Blog";
-import { ToastContainer} from "react-toastify";
+import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 import Main from "./component/Main/Main";
@@ -17,6 +17,11 @@ function App() {
       element: <Main></Main>,
       children: [
         {
+          path: "/",
+          loader: () => fetch("https://openapi.programming-hero.com/api/quiz"),
+          element: <Topics></Topics>,
+        },
+        {
           path: "/home",
           loader: () => fetch("https://openapi.programming-hero.com/api/quiz"),
           element: <Topics></Topics>,
@@ -28,7 +33,7 @@ function App() {
         },
         {
           path: "/statistics",
-          loader: ()=> fetch('https://openapi.programming-hero.com/api/quiz'),
+          loader: () => fetch("https://openapi.programming-hero.com/api/quiz"),
           element: <Statistics></Statistics>,
         },
         {
@@ -46,9 +51,9 @@ function App() {
           element: <TopicDetails></TopicDetails>,
         },
         {
-          path: '*',
-          element: <Error></Error>
-        }
+          path: "*",
+          element: <Error></Error>,
+        },
       ],
     },
   ]);
