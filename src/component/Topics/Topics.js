@@ -11,7 +11,7 @@ const Topics = () => {
       <h1 className="text-5xl">this is topic : {topics.length}</h1>
       <div>
         <div><h1>Take the QuizMaster quiz test and test your knowledge</h1></div>
-        <div className="grid grid-cols-1 gap-4 container mx-auto">
+        <div className="grid grid-cols-2 gap-4 container mx-auto md:mx-40">
         {
             topics.map(topic => <Topic key={topic.id} topic={topic}></Topic>)
         }
