@@ -1,0 +1,6 @@
+.forest {
+  background-image: url("../../../public/header.jpg");
+  min-height: 100vh;
+  min-width: 100%;
+  position: relative;
+}
