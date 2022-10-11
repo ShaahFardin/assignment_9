@@ -1,29 +1,25 @@
 import React from "react";
 import Options from "../Options/Options";
-import { BeakerIcon, EyeIcon } from "@heroicons/react/24/solid";
-
-
+import { EyeIcon } from "@heroicons/react/24/solid";
+import { toast } from "react-toastify";
 
 const Question = ({ questions }) => {
   const { correctAnswer, id, question, options } = questions;
 
-
   const selectedAnswer = (option) => {
-    console.log(option);
     if (option === correctAnswer) {
-      alert("correct answer");
+      toast("Correct Answer!", { position: toast.POSITION.TOP_LEFT });
     } else {
-      alert("wrong answer");
+      toast("Wrong Answer *_*", { position: toast.POSITION.TOP_LEFT });
     }
   };
 
-
-  const showAnswer=()=>{
-    alert(correctAnswer)
-  }
+  const showAnswer = () => {
+    toast(correctAnswer);
+  };
 
   return (
-    <div className="border rounded-xl m-5 bg-gray-100 mt-16  mx-60 shadow-xl text-start p-10 ">
+    <div className="border rounded-xl m-5 bg-sky-50 mt-16  mx-60 shadow-xl text-start p-10 ">
       <div className="flex items-center justify-between">
         <p className="text-2xl my-5 font-semibold">{question}</p>
         <p onClick={showAnswer}>
@@ -32,7 +28,7 @@ const Question = ({ questions }) => {
       </div>
       <p>
         {options.map((option) => (
-          <Options selectedAnswer={selectedAnswer} option={option}></Options>
+          <Options selectedAnswer={selectedAnswer} option={option} ></Options>
         ))}
       </p>
     </div>

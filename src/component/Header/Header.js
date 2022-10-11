@@ -2,8 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Header.css";
 import {
-  BeakerIcon,
-  EyeIcon,
   DocumentCheckIcon,
 } from "@heroicons/react/24/solid";
 
