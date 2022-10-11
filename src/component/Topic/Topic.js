@@ -9,7 +9,7 @@ const Topic = ({ topic }) => {
         <div className="text-start text-xl leading-8 ml-10">
           <p>Subject of Quiz : {name}</p>
           <p>Number of Quiz : {total}</p>
-          <button>Take test</button>
+          <button className="border bg-sky-700 text-white px-6 py-1 rounded-lg mt-5">Take test</button>
         </div>
       </div>
     </div>
