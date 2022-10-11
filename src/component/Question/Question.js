@@ -19,7 +19,7 @@ const Question = ({ questions }) => {
   };
 
   return (
-    <div className="border rounded-xl m-5 bg-sky-50 mt-16  mx-60 shadow-xl text-start p-10 ">
+    <div className="border rounded-xl m-5 bg-sky-700 text-gray-100 mt-16  mx-60 shadow-xl text-start p-10 ">
       <div className="flex items-center justify-between">
         <p className="text-2xl my-5 font-semibold">{question}</p>
         <p onClick={showAnswer}>

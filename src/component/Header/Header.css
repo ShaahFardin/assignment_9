@@ -1,3 +1,7 @@
 .menu a{
     margin-left: 40px;
 }
+.menu a:hover{
+    border-bottom: 2px solid white;
+   
+}

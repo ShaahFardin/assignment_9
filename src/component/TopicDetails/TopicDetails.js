@@ -7,10 +7,10 @@ const TopicDetails = () => {
   const Details = TopicDetails.data.questions;
   console.log(Details);
   return (
-    <div>
-      <h1 className="text-5xl m-10 shadow-lg p-5">
+    <div className="">
+      <h1 className="text-5xl p-5">
         This page contains{" "}
-        <span className="underline text-sky-700">{TopicDetails.data.name}</span> quiz
+        <span className=" text-sky-900 underline">{TopicDetails.data.name}</span> quiz
       </h1>
       <div>
         {Details.map((questions) => (
