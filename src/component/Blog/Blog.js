@@ -5,7 +5,7 @@ const Blog = () => {
     <div className="">
       <h1 className="text-5xl my-10 text-slate-500">Blog </h1>
       <div className="text-start container mx-auto mt-10">
-        <div className="border rounded-xl my-10 shadow-lg p-5">
+        <div className="border rounded-xl my-10 shadow-lg p-5 mx-7">
           <h1 className="text-2xl font-medium py-2">
             What is the purpose of react router?
           </h1>
@@ -17,7 +17,7 @@ const Blog = () => {
             user will be redirected to that particular route.
           </p>
         </div>
-        <div className="border rounded-xl my-10 shadow-xl p-5">
+        <div className="border rounded-xl my-10 shadow-xl p-5 mx-7">
           <h1 className="text-2xl font-medium py-2">
             How does context api works?
           </h1>
@@ -29,7 +29,7 @@ const Blog = () => {
             lighter approach to state management using Redux.
           </p>
         </div>
-        <div className="border rounded-xl my-10 shadow-xl p-5">
+        <div className="border rounded-xl my-10 shadow-xl p-5 mx-7">
           <h1 className="text-2xl font-medium py-2">Describe useRef hook</h1>
           <p className="text-slate-500 p-3">
             The useRef Hook allows you to persist values between renders. It can

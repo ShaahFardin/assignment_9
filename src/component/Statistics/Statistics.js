@@ -10,17 +10,17 @@ const Statistics = () => {
     console.log(datas);
     return (
       <div>
-        <h1 className="text-5xl text-slate-500 p-5 font-semibold">Statistics</h1>
-        <div className="flex justify-center m-14">
-          <LineChart width={600} height={500} data={datas}>
-            <Line type="monotone" dataKey="total" stroke="#8884d8"></Line>
+        <h1 className="text-5xl text-slate-500 m-5 p-5 font-semibold">Statistics</h1>
+        <div className="flex md:justify-center justify-start">
+          <LineChart width={450} height={500} data={datas}>
+            <Line type="monotone" dataKey="total" stroke="#8884d8" ></Line>
             <CartesianGrid stroke="#ccc"></CartesianGrid>
             <XAxis dataKey="name"></XAxis>
             <YAxis></YAxis>
             <Tooltip></Tooltip>
           </LineChart>
         </div>
-        <h1 className='text-2xl ml-20'>This is a graphical representation of the number of quiz in respective topic</h1>
+        <h1 className='m-10 text-xl md:text-2xl md:ml-20'>This is a graphical representation of the number of quiz in respective topic</h1>
       </div>
     );
 };
