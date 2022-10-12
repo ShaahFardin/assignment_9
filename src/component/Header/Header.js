@@ -12,7 +12,7 @@ const Header = () => {
         <DocumentCheckIcon className="w-10 h-10 mr-2"></DocumentCheckIcon>{" "}
         QuizMaster
       </div>
-      <div className="menu">
+      <div className="menu p-5 text-start grid md:flex">
         <Link to="/topics">Topics</Link>
         <Link to="/blog">Blog</Link>
         <Link to="/statistics">Statistics</Link>

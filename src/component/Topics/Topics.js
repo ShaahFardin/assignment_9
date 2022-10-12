@@ -15,7 +15,7 @@ const Topics = () => {
             Take the QuizMaster quiz test !
           </h1>
         </div>
-        <div className="grid md:grid-cols-2 mx-7 gap-5 mt-16  md:mx-20 pb-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 mx-7 gap-5 mt-16  md:mx-20 pb-20">
           {topics.map((topic) => (
             <Topic key={topic.id} topic={topic}></Topic>
           ))}
